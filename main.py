@@ -2,9 +2,9 @@ import autogen
 
 # https://www.phind.com/search?cache=wfun3ekgjysi1ehqbpk2kiad
 # -------------------------------------------------- CONSTANTS --------------------------------------------------
-OPENAI_API_KEY = "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"
-CRYPTO_PANIC_API_KEY = "dfb5a55ca0113013b4c12b868878b60c314b83cd"
-GNEWS_PANIC_API_KEY = "9b1f2b7c8f47fba64b98e1e52ebf8eb4"
+OPENAI_API_KEY = "TOKEN"
+CRYPTO_PANIC_API_KEY = "TOKEN"
+GNEWS_PANIC_API_KEY = "TOKEN"
 MAX_ROUNDS = 12
 # CONFIGS
 config_list = [
