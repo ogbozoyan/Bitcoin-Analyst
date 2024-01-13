@@ -4,8 +4,8 @@ Analysis last news about bitcoin and gives advice should buy or not
 
 # Installation
 
-AutoGen Locally Using Virtual Environment
-When installing AutoGen locally, we recommend using a virtual environment for the installation.
+AutoGen Locally Using Virtual Environment\
+When installing AutoGen locally, we recommend using a virtual environment for the installation.\
 This will ensure that the dependencies for AutoGen are isolated from the rest of your system.
 
 ### Setup venv
