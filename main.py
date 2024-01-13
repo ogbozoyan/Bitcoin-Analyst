@@ -59,29 +59,26 @@ juniorAssistant = autogen.AssistantAgent(
     system_message=JUNIOR_ROLE,
     name=JUNIOR_NAME,
     llm_config=DEFAULT_LLM_CONFIG,
-    # configuration for autogen's enhanced inference API which is compatible with OpenAI API
 )
 criticAssistant = autogen.AssistantAgent(
     system_message=CRITIC_ROLE,
     name=CRITIC_NAME,
     llm_config=DEFAULT_LLM_CONFIG,
-    # configuration for autogen's enhanced inference API which is compatible with OpenAI API
 )
 seniorAssistant = autogen.AssistantAgent(
     system_message=SENIOR_ROLE,
     name=SENIOR_NAME,
     llm_config=DEFAULT_LLM_CONFIG,
-    # configuration for autogen's enhanced inference API which is compatible with OpenAI API
 )
 parserAgent = autogen.AssistantAgent(
     system_message=PARSER_ROLE,
     name=PARSER_NAME,
     llm_config=DEFAULT_LLM_CONFIG,
-    # configuration for autogen's enhanced inference API which is compatible with OpenAI API
 )
-# create a UserProxyAgent instance named "user_proxy"
+
 userProxy = autogen.UserProxyAgent(
     name=USER_PROXY_NAME,
+    system_message=USER_PROXY_ROLE,
     human_input_mode="NEVER",
     max_consecutive_auto_reply=10,
     is_termination_msg=lambda x: x.get("content", "").rstrip().endswith("TERMINATE"),
@@ -89,7 +86,6 @@ userProxy = autogen.UserProxyAgent(
         "work_dir": "coding",
         "use_docker": False,  # Assuming local execution
     },
-    system_message=USER_PROXY_ROLE
 )
 
 if __name__ == "__main__":
