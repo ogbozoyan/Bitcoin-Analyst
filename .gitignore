@@ -32,3 +32,4 @@ build/
 ### VS Code ###
 .vscode/
 /cache.db
+/.cache/41/cache.db
